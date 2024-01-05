@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block keywords %}"wiki, FFVII, final fantasy, final fantasy 7, final fantasy VII, informacion"{% endblock %}
+
+
+{% block description %}"Wiki que reune todos los datos del juego FFVII y toda información relacionada a este." {% endblock %}
+
+
+{% block javascripts %}
+      <script type="text/javascript" src="{{ asset ('js/SendForm.js')}}" ></script>
+{% endblock %}
+
+
+{% block content %}
+            <h2>Home</h2>
+            <br>
+            <p>Final Fantasy VII es uno de los juegos más vendidos de la historia, y uno de los más influyentes en el mercado de los jrpg. El próposito de esta página es proporcionar información del juego.<br>
+                Para ello he dividido la página en varias secciones distintas. En:</p>
+            <ul>
+            <li><a href="{{ path ('app_generalInfo')}}" hreflang="es" type="text/html"><img src="{{ asset ('img/FinalFantasyLogo.jpeg')}}" alt="Final Fantasy VII" width="500"/><br>Final Fantasy </a><br><br><br></li>
+            <li><a hreflang="es" type="text/html" href="{{ path ('app_monsters')}}"><img src="{{ asset ('img/MonstruosImage.png')}}" height="300" alt="Monstruos,imagen"/><br>Monstruos</a></li>
+            </ul>
+            <br><br>
+            <p>Si tiene alguna duda del juego que la página no haya podido responder, puede enviarnos la pregunta en el siguiente formulario. </p>
+            <form action="Almacenamientos_de_preguntas" method="post" id="feedbackForm" >
+            <p>
+            <label>
+		    Escriba su pregunta:
+		    <input type="text" name="Pregunta" value="" id="feedback" >
+		    <br>
+	    </label>
+            <input type="submit" value="Enviar" >
+            <input type="reset" name="limpiar" value="Borrar datos del formulario" id="resetForm" >
+            </p>
+            </form>
+            <br><br>
+{% endblock %}
+
+
+{% block footer %}    
+    <p><a href="https://commons.wikimedia.org/wiki/File:Cactuar.png">Licencia de la imagen del cactilio. </a> Se ha modificado dicha imagen para que hubiesen 3 cactilios, en vez de uno.</p>
+{% endblock %}

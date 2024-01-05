@@ -1,0 +1,104 @@
+/** Este css está ordenado por: 
+        - Body
+        - Nav
+        - Content
+        - Footer
+        - Propiedades especificas
+*/
+
+/* Body */
+body {
+    /*Fondo*/
+    background-color: black;
+}
+
+/* Nav */
+
+.Boton_modo_dia a{
+    margin: 1em 0; 
+}
+
+.Boton_modo_dia a {
+    margin: 1.5em 3.1em; 
+    padding-left: 3em;
+
+
+    display: inline;
+    margin: 0em;
+    text-align: right;
+}
+
+.Boton_modo_dia a:link, .Boton_modo_dia a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.Boton_modo_dia a:hover, .Boton_modo_dia:hover{
+    border-color: #3e6157;
+
+    color: rgb(168, 168, 168);
+    text-decoration: none;
+}
+
+.Boton_modo_dia:hover{
+    border-style: outset;
+}
+
+
+
+
+
+/* Content */
+content{
+
+
+    background-color: #0c1311;
+    
+    color: #4efff6;
+
+}
+
+content a:link, content a:visited{
+    color: #4efff6;
+}
+content a:hover{
+    color: #3cf884;
+}
+
+
+
+/* Footer */
+footer{
+    background-color: #0d1a1a;
+
+    border-style: outset;
+    border-color: #c3fffc;
+
+    color: #c3fffc;
+}
+
+footer a{
+    /*Muestra los enlaces del pie de página en morado*/
+    color: #9f21a3;
+}
+
+
+/* Propiedades especificas */
+
+dl {
+    /*Muestra la tabla como en el juego*/
+
+    border-style: solid;
+    border-color: #ffffff;
+
+    background-color: #4401ff;
+
+    color: #ffffff;
+}
+
+
+table {
+    /*Todas las tablas son del nivel de lows monstruos respecto a sus atributos*/
+    position: relative;
+    left: 20%;
+}

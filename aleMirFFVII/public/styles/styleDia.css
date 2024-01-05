@@ -1,0 +1,93 @@
+/** Este css está ordenado por: 
+        - Body
+        - Nav
+        - Content
+        - Footer
+        - Propiedades especificas
+*/
+
+
+/* Body */
+body {
+    /*Fondo*/
+    background-color: rgb(0, 57, 61);
+}
+
+/* Nav */
+.Boton_modo_noche a {
+    margin: 1.5em 3.1em; 
+    padding-left: 3em;
+
+
+    display: inline;
+    margin: 0em;
+    text-align: right;
+}
+
+
+.Boton_modo_noche a:link, .Boton_modo_noche a:visited{
+    color: #e6346fe1;
+    text-decoration: none;
+}
+
+
+.Boton_modo_noche a:hover, .Boton_modo_noche:hover{
+
+    color: #06aa0e;
+}
+
+
+.Boton_modo_noche:hover{
+    border-style: outset;
+}
+
+
+
+/*Content */
+content{
+    border-style: solid;
+    border-color: #adadad;
+    border-width: 0.25em;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(68,1,255,1) 43%, rgba(37,1,255,0.8589636538209033) 100%); 
+
+    color: #ffffff;
+}
+
+content a:link, content a:visited{
+    color: #ffffff;
+}
+
+content a:hover{
+    color: #ff04ff;
+}
+
+
+/* Footer */
+footer{
+    background-color: #8bc5c5;
+
+    border-style: outset;
+    border-color: #5e7c7b;
+
+    color: #5f7c7b;
+}
+
+footer a{
+    /*Muestra los enlaces del pie de página en morado*/
+    color: #9f21a3;
+}
+
+
+
+
+/* Propiedades especificas */
+
+dl {
+    /*Muestra la tabla como en el juego*/
+
+    color: #ffffff;
+}
+
+
