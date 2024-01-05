@@ -1,0 +1,2 @@
+# FFVIIWiki
+Wiki de FFVII
